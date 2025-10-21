@@ -1,0 +1,194 @@
+.performance-monitor {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.performance-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.performance-header h2 {
+    color: #333;
+    margin: 0;
+}
+
+.performance-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.performance-controls button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.start-btn {
+    background: #28a745;
+    color: white;
+}
+
+.stop-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.performance-controls button:not(.start-btn):not(.stop-btn) {
+    background: #007bff;
+    color: white;
+}
+
+.performance-controls button:hover {
+    opacity: 0.9;
+}
+
+.performance-controls button:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+.performance-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.metric-card {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.metric-card h3 {
+    margin: 0 0 10px 0;
+    color: #495057;
+    font-size: 16px;
+}
+
+.metric-card p {
+    margin: 5px 0;
+    color: #6c757d;
+}
+
+/* Endpoint Stats Table Styles */
+.endpoint-stats {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.endpoint-stats h3 {
+    margin: 0 0 15px 0;
+    color: #495057;
+    font-size: 18px;
+}
+
+.stats-table {
+    overflow-x: auto;
+}
+
+.stats-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.stats-table th,
+.stats-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+    color: #000000;
+}
+
+.stats-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #000000;
+    border-top: 1px solid #dee2e6;
+}
+
+.stats-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.method-cell {
+    text-align: center;
+    color: #000000;
+}
+
+.method-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.method-badge.get {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.method-badge.post {
+    background-color: #cce7ff;
+    color: #004085;
+}
+
+.method-badge.put {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.method-badge.delete {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.high-variance {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.low-variance {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.performance-plot {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.performance-plot img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.monitoring-status {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.monitoring-status .monitoring {
+    color: #28a745;
+}
+
+.monitoring-status .stopped {
+    color: #dc3545;
+}

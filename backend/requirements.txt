@@ -1,0 +1,31 @@
+# Core web framework
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+
+# Data validation and handling
+pydantic>=2.5.0
+
+# Simulation and scientific computing
+jupedsim>=1.2.1
+pedpy>=1.2.0
+numpy>=1.24.3
+matplotlib>=3.7.1
+shapely>=2.0.1
+geopandas>=0.13.2
+
+# File processing and visualization
+ezdxf>=1.0.3
+plotly>=5.17.0
+
+# Command line interface and rich output
+typer>=0.9.0
+rich>=13.4.2
+
+# Jupyter notebook support
+nbformat>=5.9.2
+
+# Development and optional dependencies
+python-multipart  # For file uploads in FastAPI
+psutil
+
+google-generativeai>=0.3.0 
