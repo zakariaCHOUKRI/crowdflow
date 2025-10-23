@@ -5,8 +5,6 @@ import tempfile
 from pathlib import Path
 import ezdxf
 from fastapi import APIRouter, File, HTTPException, UploadFile
-from routes.dxfutils import LAYER_PATTERNS, make_journeys, match_pattern, parse_dxf_file, save_as_wkt
-from services.file_service import create_summary_from_data, extract_layers_from_data
 
 router = APIRouter()
 
